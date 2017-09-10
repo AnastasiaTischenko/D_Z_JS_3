@@ -8,7 +8,12 @@ function arrOut(){
     y = document.getElementById('num').value;
     arr[x] = y;
     for (var i = 0; i < arr.length; i++){
-        p.innerHTML += ", " + arr[i];
+        if (i == 0){
+           p.innerHTML += "" + arr[i]; 
+        }
+        else {
+            p.innerHTML += ", " + arr[i];
+        }
     }
 }
 
